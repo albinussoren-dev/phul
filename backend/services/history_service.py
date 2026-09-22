@@ -1,0 +1,1 @@
+def health():return {"storage":"local-browser","cloud_sync":False}
