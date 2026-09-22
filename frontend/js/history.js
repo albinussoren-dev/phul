@@ -1,0 +1,1 @@
+export function getHistory(){return JSON.parse(localStorage.getItem('phul_chats')||'[]')}export function saveHistory(v){localStorage.setItem('phul_chats',JSON.stringify(v))}
