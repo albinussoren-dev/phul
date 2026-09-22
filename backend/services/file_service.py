@@ -1,0 +1,1 @@
+def validate_text_size(text,max_chars=50000):return text[:max_chars]
