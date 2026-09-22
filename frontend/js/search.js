@@ -1,0 +1,1 @@
+import {renderChatList} from './chat.js';export function initSearch(){const s=document.getElementById('chatSearch');s.oninput=renderChatList;document.getElementById('searchChats').onclick=()=>{s.classList.toggle('hide');s.focus()}}
