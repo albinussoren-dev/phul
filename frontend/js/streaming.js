@@ -1,0 +1,1 @@
+export async function readSSE(response,onEvent){const r=response.body.getReader(),d=new TextDecoder();let b='';while(true){const q=await r.read();b+=d.decode(q.value||new Uint8Array(),{stream:!q.done});const p=b.split('\n\n');b=p.pop()||'';p.forEach(x=>{if(x.startsWith('data: '))onEvent(JSON.parse(x.slice(6)))});if(q.done)break}}
