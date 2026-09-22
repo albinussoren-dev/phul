@@ -1,0 +1,1 @@
+export function initMarkdown(){document.addEventListener('click',e=>{const b=e.target.closest('[data-copy]');if(b){navigator.clipboard.writeText(decodeURIComponent(b.dataset.copy));window.phul.toast('Code copied')}})}
