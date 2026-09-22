@@ -1,0 +1,1 @@
+export function initTheme(){if(localStorage.getItem('phul_theme')==='light')document.body.classList.add('light');document.getElementById('themeBtn').onclick=()=>{document.body.classList.toggle('light');localStorage.setItem('phul_theme',document.body.classList.contains('light')?'light':'dark')}}
